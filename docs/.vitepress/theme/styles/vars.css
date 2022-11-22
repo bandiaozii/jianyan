@@ -1,0 +1,298 @@
+/**
+ * Colors
+ * -------------------------------------------------------------------------- */
+/* @font-face {
+  font-family: kzxw;
+  src: url("fonts/kzxw.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal
+} */
+
+/* @font-face {
+  font-family: kzklt;
+  src: url("fonts/kzklt.ttf")format('truetype');
+
+} */
+
+@font-face {
+  font-family: kzwyt;
+  src: url("fonts/kzwyt.ttf")format('truetype');
+
+}
+
+/* @font-face {
+  font-family: kzhyt;
+  src: url("fonts/kzhyt.ttf")format('truetype');
+
+} */
+
+
+
+/* @font-face {
+  font-family: alht;
+  font-weight: 700;
+  src: url("fonts/alht.ttf")format('truetype');
+} */
+
+/* @font-face {
+  font-family: ceym;
+  font-weight: 700;
+  src: url("fonts/ceym.ttf")format('truetype');
+}
+
+@font-face {
+  font-family: ceymc;
+  font-weight: 700;
+  src: url("fonts/ceymc.ttf")format('truetype');
+} */
+
+/* @font-face {
+  font-family: systl;
+  src: url("fonts/systl.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal
+} */
+
+
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+
+
+
+
+:root {
+  --vp-c-brand: #646cff;
+  --vp-c-brand-light: #747bff;
+  --vp-c-brand-lighter: #9499ff;
+  --vp-c-brand-lightest: #bcc0ff;
+  --vp-c-brand-dark: #535bf2;
+  --vp-c-brand-darker: #454ce1;
+  --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
+  --vp-c-text-code: #454ce1;
+  --vp-c-white-mute: #dee0fd;
+  --vp-c-bg-mute: #dee0fd;
+  --vp-c-bg-h2: #9499ff;
+  --vp-c-text-h2: #454ce1;
+  --vp-c-text-h3: #ffffff;
+  --vp-c-text-h4: #454ce1;
+  --vp-c-bg-s: rgba(184, 83, 243, 0.5);
+
+  /* --vp-custom-block-details-border: var(--vp-c-bg); */
+
+
+
+  /*--vp-c-gray-dark-3:*/
+  --vp-c-gray-dark-3: #b6b6b6;
+
+
+}
+
+/**
+ * Component: Button
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-button-brand-border: var(--vp-c-brand-light);
+  --vp-button-brand-text: var(--vp-c-text-dark-1);
+  --vp-button-brand-bg: var(--vp-c-brand);
+  --vp-button-brand-hover-border: var(--vp-c-brand-light);
+  --vp-button-brand-hover-text: var(--vp-c-text-dark-1);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+  --vp-button-brand-active-border: var(--vp-c-brand-light);
+  --vp-button-brand-active-text: var(--vp-c-text-dark-1);
+  --vp-button-brand-active-bg: var(--vp-button-brand-bg);
+}
+
+/**
+ * Component: Home
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
+      #bd34fe 30%,
+      #41d1ff);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg,
+      #bd34fe 50%,
+      #47caff 50%);
+  --vp-home-hero-image-filter: blur(40px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(72px);
+  }
+}
+
+/**
+ * Component: Custom Block
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+.dark {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+/**
+ * Component: Algolia
+ * -------------------------------------------------------------------------- */
+
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand) !important;
+}
+
+/**
+ * VitePress: Custom fix
+ * -------------------------------------------------------------------------- */
+
+/*
+  Use lighter colors for links in dark mode for a11y.
+  Also specify some classes twice to have higher specificity
+  over scoped class data attribute.
+*/
+.dark .vp-doc a,
+.dark .vp-doc a>code,
+.dark .VPNavBarMenuLink.VPNavBarMenuLink:hover,
+.dark .VPNavBarMenuLink.VPNavBarMenuLink.active,
+.dark .link.link:hover,
+.dark .link.link.active,
+.dark .edit-link-button.edit-link-button,
+.dark .pager-link .title {
+  color: var(--vp-c-brand-lighter);
+}
+
+.dark .vp-doc a:hover,
+.dark .vp-doc a>code:hover {
+  color: var(--vp-c-brand-lightest);
+  opacity: 1;
+}
+
+/* Transition by color instead of opacity */
+.dark .vp-doc .custom-block a {
+  transition: color 0.25s;
+}
+
+h2 {
+  /* font-family: 'ceymc'; */
+  color: var(--vp-c-text-h2);
+  /*text-align: center;*/
+}
+
+h3 {
+
+  border-radius: 4px;
+  padding: 0px 0px 2px;
+  color: var(--vp-c-text-h3);
+  background-image: linear-gradient(to right, rgba(85, 176, 237, 0.8), rgba(184, 83, 243, 0.5));
+  transition: color 0.5s, background-color 0.1s;
+
+}
+
+
+h4 {
+  border-radius: 4px;
+  padding-top: 10px;
+  color: var(--vp-c-text-h4);
+  transition: color 0.5s, background-color 0.1s;
+}
+
+h5 {
+  padding-top: 10px;
+  color: var(--vp-c-text-h4);
+  transition: color 0.5s, background-color 0.1s;
+}
+
+p {
+
+}
+
+s {
+  /* color: var(--vp-c-text-h4); */
+  border-radius: 4px;
+  padding: 3px 6px;
+  color: var(--vp-c-text-code);
+  background-color: var(--vp-c-bg-s);
+  transition: color 0.5s, background-color 0.5s;
+}
+
+li {
+
+}
+
+
+.custom-block {
+  padding: 0px 0px 0px;
+  line-height: 20px;
+  font-size: 14px;
+
+}
+
+.custom-block.details {
+  border-color: var(--vp-c-bg);
+  background-color: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+
+}
+
+.custom-block.details ul li {
+  font-weight: 200;
+  line-height: 24px;
+}
+
+.custom-block.details p {
+  /* font-family: "systl"; */
+}
+
+
+
+code {
+
+}
+
+table {
+  background-color: var(--vp-c-brand-lightest);
+  border-color: #84cd1e;
+  border: 1px solid rgba(9, 72, 246, 0.29)
+}
+
+thead {
+  border: 1px solid rgba(9, 72, 246, 0.29)
+}
+
+
+/* 表格头 */
+tr {
+  color: var(--vp-c-text-h2);
+}
+
+/* 表格内容 */
+td {
+
+  color: var(--vp-c-text-h2);
+}
+
+mark{
+  margin: 3px;
+  padding: 3px 3px;
+  text-align: center;
+  font-size: 10px;
+  font-weight:bold;
+  color:#eeeeee;
+  border-radius: 4px;
+  background: #999999;
+  box-shadow: inset -5px -5px 9px #949494,
+  inset 5px 5px 9px #9e9e9e;
+}
