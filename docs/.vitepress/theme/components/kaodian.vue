@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <div class="h"> {{ title }}</div>
+<!--    <div class="h"> {{ title }}</div>-->
     <span class="span"> {{ zishu }} 字数</span>
     <span class="span"> {{ Math.trunc(zishu/300) }} 分钟</span>
   <span class="kaodian"> {{ message }} 考点</span>

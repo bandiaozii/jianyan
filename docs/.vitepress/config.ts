@@ -60,10 +60,10 @@ export default defineConfig({
     },
     themeConfig: {
         logo: '/logo.svg',
-        editLink: {
-            text: '为此页提供修改建议',
-            pattern: 'https://github.com/vitejs/docs-cn/edit/main/:path'
-        },
+        // editLink: {
+        //     text: '为此页提供修改建议',
+        //     pattern: 'https://github.com/vitejs/docs-cn/edit/main/:path'
+        // },
         lastUpdatedText: "Last Updated",
         // socialLinks: [
         //     { icon: 'twitter', link: 'https://twitter.com/vite_js' },

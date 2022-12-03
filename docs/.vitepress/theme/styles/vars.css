@@ -193,11 +193,11 @@ h2 {
 
 h3 {
 
-  border-radius: 4px;
-  padding: 0px 0px 2px;
-  color: var(--vp-c-text-h3);
-  background-image: linear-gradient(to right, rgba(85, 176, 237, 0.8), rgba(184, 83, 243, 0.5));
-  transition: color 0.5s, background-color 0.1s;
+  /*border-radius: 4px;*/
+  /*padding: 0px 0px 2px;*/
+  color: var(--vp-c-text-h2);
+  /*background-image: linear-gradient(to right, rgba(85, 176, 237, 0.8), rgba(184, 83, 243, 0.5));*/
+  /*transition: color 0.5s, background-color 0.1s;*/
 
 }
 
